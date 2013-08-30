@@ -1,4 +1,4 @@
-The idea for this app is to create a new music service to compete with the likes of Pandora and Spotify, but for a more niche clientele; those who
+The idea for this app is to create a new music service to compete with the likes of Pandora and Spotify, but for a more niche clientele: those who
 are hardcore music appreciators. Everybody has their favorite artist or genre, but I'm looking to take aim at people who are more than that, who are
 not afraid to explore all kinds of music regardless of genre. 
 
