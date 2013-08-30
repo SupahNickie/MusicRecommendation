@@ -7,11 +7,14 @@ quantified on a scale: Mood, Timbre, Intensity, and Tone. I believe that these f
 lovers to experiment with new kinds of musical experiences they've never thought to try before. With a numerical score of 50 representing completely
 average or neutral, the definitions of the scores are as follows:
 
-Mood - Light to Dark; how "evil" or "happy" does a song sound?
-Timbre - Smooth to Raw; how grating is the sound to the ears? Michael Buble is NOT going to be in the same park as Cannibal Corpse.
-Intensity - Backgroundy to Oppressive; how "up-front" and "in your face" is the music? A song with a lower score could be thrown on in the background
+-- Mood - Light to Dark; how "evil" or "happy" does a song sound?
+
+-- Timbre - Smooth to Raw; how grating is the sound to the ears? Michael Buble is NOT going to be in the same park as Cannibal Corpse.
+
+-- Intensity - Backgroundy to Oppressive; how "up-front" and "in your face" is the music? A song with a lower score could be thrown on in the background
 while one does chores and be unintrusive while a score of 100 would leave the user breathless and unable to focus on anything but the song.
-Tone - Rhythmic to Melodic; what's the balance between rhythm and melody in the song? More melodious singer-songwriter types would score higher than a
+
+-- Tone - Rhythmic to Melodic; what's the balance between rhythm and melody in the song? More melodious singer-songwriter types would score higher than a
 rhythm-centric Djembe tribal group for example.
 
 In defining music by these four qualities, users can experience songs and artists, even whole genres they never would have thought to try beforehand.
@@ -22,11 +25,11 @@ User X wants to listen to something quite dark and with low intensity; he does n
 
 
 
-"Mitosis" by Anomalous (off the album Ohmnivalent) - http://www.youtube.com/watch?v=_bT_lxoUF7c
+-- "Mitosis" by Anomalous (off the album Ohmnivalent) - http://www.youtube.com/watch?v=_bT_lxoUF7c
 
-"Acceptance" by Akira Yamaoka feat. Mary Elizabeth McGlynn (off the album Silent Hill: Shattered Memories) - http://www.youtube.com/watch?v=93RT0VTIphI
+-- "Acceptance" by Akira Yamaoka feat. Mary Elizabeth McGlynn (off the album Silent Hill: Shattered Memories) - http://www.youtube.com/watch?v=93RT0VTIphI
 
-"Symphony No.3 Op.36, Movement 1" by Henryk Gorecki - http://www.youtube.com/watch?v=XXkuF5XOEm0
+-- "Symphony No.3 Op.36, Movement 1" by Henryk Gorecki - http://www.youtube.com/watch?v=XXkuF5XOEm0
 
 
 
