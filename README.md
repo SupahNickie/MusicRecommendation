@@ -37,7 +37,7 @@ Trying these three songs out, you can hear how similar they are in the overall s
 proclaimed "brutal technical death metal" act from San Francisco, Akira Yamaoka is best known for his pioneering work in the Konami video game series 
 "Silent Hill", where he blends soundscapes with hip-hop inspired drum beats to create unsettling scores, and Henryk Gorecki's 3rd Symphony is a 
 masterpiece of melancholy written in the mid-1970s. These three pieces of music have as little to do with each other in terms of genre and artist 
-"relationships" as possible. Searching "Anomalous" on Pandora WOULD NOT throw these two songs into a playlist for User X, even though this is the
+"relationships" as possible. Searching "Anomalous" on Pandora WOULD NOT throw these three songs into a playlist together for User X, even though this is the
 type of music he wants to listen to; instead, he would get a slew of death metal.
 
 Individual songs are what make up an artist's repertoire, not a particular album or even decade. Of course, some artists are more unidirectional than
