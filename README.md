@@ -20,9 +20,15 @@ Here's a sample use-case scenario:
 User X wants to listen to something quite dark and with low intensity; he does not have a preference for timbre or the tone balance. A search reveals
 (among others of course) these three songs to him:
 
+
+
 "Mitosis" by Anomalous (off the album Ohmnivalent) - http://www.youtube.com/watch?v=_bT_lxoUF7c
+
 "Acceptance" by Akira Yamaoka feat. Mary Elizabeth McGlynn (off the album Silent Hill: Shattered Memories) - http://www.youtube.com/watch?v=93RT0VTIphI
+
 "Symphony No.3 Op.36, Movement 1" by Henryk Gorecki - http://www.youtube.com/watch?v=XXkuF5XOEm0
+
+
 
 Trying these three songs out, you can hear how similar they are in the overall subjective "feel" of the piece, though the band Anomalous is a self-
 proclaimed "brutal technical death metal" act from San Francisco, Akira Yamaoka is best known for his pioneering work in the Konami video game series 
