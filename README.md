@@ -40,7 +40,7 @@ masterpiece of melancholy written in the mid-1970s. These three pieces of music 
 "relationships" as possible. Searching "Anomalous" on Pandora WOULD NOT throw these two songs into a playlist for User X, even though this is the
 type of music he wants to listen to; instead, he would get a slew of death metal.
 
-Individual songs are what make up an artists repertoire, not a particular album or even decade. Of course, some artists are more unidirectional than
+Individual songs are what make up an artist's repertoire, not a particular album or even decade. Of course, some artists are more unidirectional than
 others, but a perfect case would be the iconic group Metallica. Their career spans 30+ years and the vast range they cover would make it difficult for
 a music database to really be able to accurately base recommendations based on mood by just using the input "Metallica". Does the user mean the Metallica
 that wrote the song "Nothing Else Matters" and "Mama Said"? Or... does the user mean the Metallica that wrote "Dyer's Eve" and "Damage Inc."? This type
