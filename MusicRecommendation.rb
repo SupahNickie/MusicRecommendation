@@ -24,10 +24,10 @@ class Library
   def list_all
     songs.each do |song|
       puts "#{song.name} by #{song.artist}, 
-        Mood: #{song.endattributes[0]}, 
-        Timbre: #{song.endattributes[1]}, 
-        Intensity: #{song.endattributes[2]}, 
-        Tone: #{song.endattributes[3]}"
+        Mood: #{song.end_attributes[0]}, 
+        Timbre: #{song.end_attributes[1]}, 
+        Intensity: #{song.end_attributes[2]}, 
+        Tone: #{song.end_attributes[3]}"
     end
   end
   
@@ -40,28 +40,28 @@ class Library
     end
   end
   
-  def checkfit(attributescore, attribute)
+  def check_fit(attribute_score, attribute)
     return true if
-      ((attributescore - attribute) >= -5 &&
-      (attributescore - attribute) <= 5) ||
-      (attributescore == 0)
+      ((attribute_score - attribute) >= -5 &&
+      (attribute_score - attribute) <= 5) ||
+      (attribute_score == 0)
   end
   
   def recommend
     puts "What mood score would you like to hear? (Lower numbers = Happy, Higher numbers = Dark"
-    moodscore = gets.chomp.to_i
+    mood_score = gets.chomp.to_i
     puts "How smooth do you want it to sound? (Lower numbers = Raw, Higher numbers = Smooth"
-    timbrescore = gets.chomp.to_i
+    timbre_score = gets.chomp.to_i
     puts "How intense do you want it? (Lower numbers = Chill, Higher numbers = Intense)"
-    intensityscore = gets.chomp.to_i
+    intensity_score = gets.chomp.to_i
     puts "How balanced do you want the rhythm and melody? (Lower numbers = Rhythm-oriented, Higher numbers = Melody-oriented)"
-    tonescore = gets.chomp.to_i
+    tone_score = gets.chomp.to_i
     songs.each do |song|
       if
-        checkfit(moodscore, song.endattributes[0]) &&
-        checkfit(timbrescore, song.endattributes[1]) &&
-        checkfit(intensityscore, song.endattributes[2]) &&
-        checkfit(tonescore, song.endattributes[3])
+        check_fit(mood_score, song.end_attributes[0]) &&
+        check_fit(timbre_score, song.end_attributes[1]) &&
+        check_fit(intensity_score, song.end_attributes[2]) &&
+        check_fit(tone_score, song.end_attributes[3])
         add_song_to_playlist(song)
       end
     end
@@ -70,44 +70,44 @@ class Library
 end
 
 class Song
-  attr_accessor :name, :artist, :attributes, :mood, :timbre, :intensity, :tone, :endattributes, :library
-  def initialize(name, artist, attributes = [], endattributes = [], library = nil)
+  attr_accessor :name, :artist, :attributes, :mood, :timbre, :intensity, :tone, :end_attributes, :library
+  def initialize(name, artist, attributes = [], end_attributes = [], library = nil)
     @name = name
     @artist = artist
     @attributes = attributes
-    @endattributes = endattributes
+    @end_attributes = end_attributes
   end
     
   def rating
     puts "What would you like to rate the mood of the song?"
-    moodscore = gets.chomp.to_i
+    mood_score = gets.chomp.to_i
     puts "What would you like to rate the timbre of the song?"
-    timbrescore = gets.chomp.to_i
+    timbre_score = gets.chomp.to_i
     puts "What would you like to rate the intensity of the song?"
-    intensityscore = gets.chomp.to_i
+    intensity_score = gets.chomp.to_i
     puts "What would you like to rate the tone of the song?"
-    tonescore = gets.chomp.to_i
+    tone_score = gets.chomp.to_i
 # EVALUATING MOOD SCORE
-      attributes[0].push(moodscore) unless (moodscore == 0)
-      summood = attributes[0].reduce :+
-      averagemood = (summood / attributes[0].count)
-      endattributes[0] = averagemood
+      attributes[0].push(mood_score) unless (mood_score == 0)
+      sum_mood = attributes[0].reduce :+
+      average_mood = (sum_mood / attributes[0].count)
+      end_attributes[0] = average_mood
 # EVALUATING TIMBRE SCORE
-      attributes[1].push(timbrescore) unless (timbrescore == 0)
-      sumtimbre = attributes[1].reduce :+  
-      averagetimbre = (sumtimbre / attributes[1].count)
-      endattributes[1] = averagetimbre
+      attributes[1].push(timbre_score) unless (timbre_score == 0)
+      sum_timbre = attributes[1].reduce :+  
+      average_timbre = (sum_timbre / attributes[1].count)
+      end_attributes[1] = average_timbre
 # EVALUATING INTENSITY SCORE
-      attributes[2].push(intensityscore) unless (intensityscore == 0)
-      sumintensity = attributes[2].reduce :+
-      averageintensity = (sumintensity / attributes[2].count)  
-      endattributes[2] = averageintensity
+      attributes[2].push(intensity_score) unless (intensity_score == 0)
+      sum_intensity = attributes[2].reduce :+
+      average_intensity = (sum_intensity / attributes[2].count)  
+      end_attributes[2] = average_intensity
 # EVALUATING TONE SCORE
-      attributes[3].push(tonescore) unless (tonescore == 0)
-      sumtone = attributes[3].reduce :+
-      averagetone = (sumtone / attributes[3].count)
-      endattributes[3] = averagetone    
-    puts "New score: Mood = #{averagemood}, Timbre = #{averagetimbre}, Intensity = #{averageintensity}, Tone = #{averagetone}"
+      attributes[3].push(tone_score) unless (tone_score == 0)
+      sum_tone = attributes[3].reduce :+
+      average_tone = (sum_tone / attributes[3].count)
+      end_attributes[3] = average_tone    
+    puts "New score: Mood = #{average_mood}, Timbre = #{average_timbre}, Intensity = #{average_intensity}, Tone = #{average_tone}"
   end
 end
 
@@ -141,7 +141,7 @@ puts "TESTING TIMBRE ATTRIBUTE ONLY"
 puts song2.attributes[1]
 puts song2.attributes[1].count
 puts "TESTING END AVERAGES INCLUDING FIRST RATING"
-puts song2.endattributes
+puts song2.end_attributes
 puts "TESTING 3RD RATING OVERALL"
 song2.rating
 puts "RIDE THE LIGHNING'S NEW TIMBRE ATTRIBUTE (CALCULATES AVERAGE FROM): #{song2.attributes[1]}"
