@@ -35,9 +35,7 @@ class Library
     playlist.each do |song|
       puts "#{song.name} by #{song.artist}"
     end
-    if playlist.empty?
-      puts "No matches found"
-    end
+    puts "No matches found" if playlist.empty?
   end
   
   def check_fit(attribute_score, attribute)
@@ -88,22 +86,22 @@ class Song
     puts "What would you like to rate the tone of the song?"
     tone_score = gets.chomp.to_i
 # EVALUATING MOOD SCORE
-      attributes[0].push(mood_score) unless (mood_score == 0)
+      attributes[0].push(mood_score) unless (mood_score == 0 || mood_score > 100)
       sum_mood = attributes[0].reduce :+
       average_mood = (sum_mood / attributes[0].count)
       end_attributes[0] = average_mood
 # EVALUATING TIMBRE SCORE
-      attributes[1].push(timbre_score) unless (timbre_score == 0)
+      attributes[1].push(timbre_score) unless (timbre_score == 0 || timbre_score > 100)
       sum_timbre = attributes[1].reduce :+  
       average_timbre = (sum_timbre / attributes[1].count)
       end_attributes[1] = average_timbre
 # EVALUATING INTENSITY SCORE
-      attributes[2].push(intensity_score) unless (intensity_score == 0)
+      attributes[2].push(intensity_score) unless (intensity_score == 0 || timbre_score > 100)
       sum_intensity = attributes[2].reduce :+
       average_intensity = (sum_intensity / attributes[2].count)  
       end_attributes[2] = average_intensity
 # EVALUATING TONE SCORE
-      attributes[3].push(tone_score) unless (tone_score == 0)
+      attributes[3].push(tone_score) unless (tone_score == 0 || tone_score > 100)
       sum_tone = attributes[3].reduce :+
       average_tone = (sum_tone / attributes[3].count)
       end_attributes[3] = average_tone    
