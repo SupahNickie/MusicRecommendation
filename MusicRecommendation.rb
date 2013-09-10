@@ -57,7 +57,7 @@ class Library
     songs.each do |song|
       if
         check_fit(mood_score, song.end_attributes[:mood]) &&
-        check_fit(timbre_score, song.end_attributes[:tone]) &&
+        check_fit(timbre_score, song.end_attributes[:timbre]) &&
         check_fit(intensity_score, song.end_attributes[:intensity]) &&
         check_fit(tone_score, song.end_attributes[:tone])
         add_song_to_playlist(song)
