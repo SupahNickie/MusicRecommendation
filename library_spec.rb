@@ -6,7 +6,7 @@ describe Library do
     @song = Song.new('songname', 'artistname', {mood: [10, 20], timbre: [30, 40], intensity: [50, 60], tone: [70, 80]}, {mood: 15, timbre: 35, intensity: 55, tone: 75})
   end
 
-  it "should add a song to the library" do
+  it "should add and remove a song to the library" do
     # Add song
       @library.songs.push(@song)
       @library.songs[0].should == @song
